@@ -9,7 +9,7 @@ const ProfileDeleteComponent = ({ Redux, OnClick }) => {
   // JSX
   return (
     <React.Fragment>
-      <section class="bg-[#CED46A] dark:bg-[#07553B] text-[#07553B] dark:text-[#CED46A] lg:px-20">
+      <section class="bg-[#E2D3F3] dark:bg-[#013DC4] text-[#013DC4] dark:text-[#E2D3F3] lg:px-20">
         <div class="container px-5 py-12 mx-auto flex flex-col">
           <div class="lg:w-4/6 mx-auto">
             <div class="rounded-lg h-64 overflow-hidden">
@@ -32,7 +32,7 @@ const ProfileDeleteComponent = ({ Redux, OnClick }) => {
                     {Redux.state.ReceivedObject?.Retrieve?.firstName} {" "}
                     {Redux.state.ReceivedObject?.Retrieve?.lastName}
                   </h2>
-                  <div class="w-12 h-1 bg-[#07553B] dark:bg-[#CED46A] rounded mt-2 mb-4"></div>
+                  <div class="w-12 h-1 bg-[#013DC4] dark:bg-[#E2D3F3] rounded mt-2 mb-4"></div>
                   <p class="text-base">{Redux.state.ReceivedObject?.Retrieve?.subtitle}</p>
                 </div>
               </div>
@@ -51,8 +51,8 @@ const ProfileDeleteComponent = ({ Redux, OnClick }) => {
         <div class="container px-5 py-12 mx-auto">
           <div class="flex flex-wrap -m-4">
             <div class="p-4 xl:w-full md:w-1/2 w-full">
-              <div class="h-full p-6 rounded-lg border-2 border-[#07553B] dark:border-[#CED46A] flex flex-col relative overflow-hidden">
-                <h1 class="text-md pb-4 mb-4 border-b border-[#07553B] dark:border-[#CED46A] leading-none">Are you sure! You want to delete your account?</h1>
+              <div class="h-full p-6 rounded-lg border-2 border-[#013DC4] dark:border-[#E2D3F3] flex flex-col relative overflow-hidden">
+                <h1 class="text-md pb-4 mb-4 border-b border-[#013DC4] dark:border-[#E2D3F3] leading-none">Are you sure! You want to delete your account?</h1>
                 <Button className="mt-2" variant="destructive" onClick={OnClick}>
                   Sure, Delete My Account!
                 </Button>

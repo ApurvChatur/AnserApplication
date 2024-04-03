@@ -11,7 +11,7 @@ const ProjectSectionComponent = React.lazy(() => import('./component/eProjectSec
 
 const HomePageComponent = ({ Redux, ReduxUltimate }) => {
   return (
-    <div className="bg-[#CED46A] dark:bg-[#07553B] text-[#07553B] dark:text-[#CED46A] lg:px-20">
+    <div className="bg-[#E2D3F3] dark:bg-[#013DC4] text-[#013DC4] dark:text-[#E2D3F3] lg:px-20">
       <Suspense fallback={<Loader text="Suspense Boom Loading..." />}>
         {Redux.state.ReceivedObject?.Retrieve?.HeroRetrieve && <HeroSectionComponent Redux={Redux} ReduxUltimate={ReduxUltimate} />}
 

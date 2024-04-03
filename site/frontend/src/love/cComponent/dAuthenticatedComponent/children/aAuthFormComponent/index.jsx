@@ -15,7 +15,7 @@ import {
 const AuthFormComponent = ({ Data, Redux, ReduxUltimate }) => {
   return (
     <React.Fragment>
-      <section className="bg-[#CED46A] dark:bg-[#07553B] text-[#07553B] dark:text-[#CED46A] lg:px-20">
+      <section className="bg-[#E2D3F3] dark:bg-[#013DC4] text-[#013DC4] dark:text-[#E2D3F3] lg:px-20">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4">{Data.title}</h1>

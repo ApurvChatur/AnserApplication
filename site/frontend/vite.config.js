@@ -12,8 +12,8 @@ export default defineConfig({
         "name":"Anser Enterprise",
         "short_name":"Anser",
         "display": "standalone",
-        "background_color": "#07553B",
-        "theme_color": "#07553B",
+        "background_color": "#013DC4",
+        "theme_color": "#013DC4",
         "icons":[
           {
             src: "Business/Anser/favicon_io/android-chrome-512x512.png",

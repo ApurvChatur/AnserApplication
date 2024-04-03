@@ -27,8 +27,8 @@ function ProjectSectionComponent({ Redux }) {
                   key={index}
                   className={`hover:cursor-pointer uppercase sm:px-6 py-3 w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 title-font font-medium inline-flex items-center leading-none tracking-wider
                   ${activeProjectGroup === each.title ? 
-                    "bg-[#07553B] dark:bg-[#CED46A] text-[#CED46A] dark:text-[#07553B] border-[#CED46A] dark:border-[#07553B] rounded-t" : 
-                    "border-[#07553B] dark:border-[#CED46A]"}
+                    "bg-[#013DC4] dark:bg-[#E2D3F3] text-[#E2D3F3] dark:text-[#013DC4] border-[#E2D3F3] dark:border-[#013DC4] rounded-t" : 
+                    "border-[#013DC4] dark:border-[#E2D3F3]"}
                   `}
                   onClick={() => setActiveProjectGroup(each?.title)}
                 >
@@ -37,13 +37,13 @@ function ProjectSectionComponent({ Redux }) {
                   </svg>{each.title}
                 </a>
               )) }
-              <ScrollBar orientation="horizontal" className="bg-[#07553B] dark:bg-[#CED46A]" />
+              <ScrollBar orientation="horizontal" className="bg-[#013DC4] dark:bg-[#E2D3F3]" />
             </ScrollArea>
           </div>
           
           {Redux.state.ReceivedObject?.Retrieve?.ProjectSectionRetrieve?.projectGroups?.map((each, index) => (
             <React.Fragment key={index}>
-              <div className={`flex flex-wrap text-center bg-[#07553B] dark:bg-[#CED46A] text-[#CED46A] dark:text-[#07553B] bg-opacity-60 px-4 py-6 rounded-lg ${activeProjectGroup === each.title ? "" : "hidden"}`}>
+              <div className={`flex flex-wrap text-center bg-[#013DC4] dark:bg-[#E2D3F3] text-[#E2D3F3] dark:text-[#013DC4] bg-opacity-60 px-4 py-6 rounded-lg ${activeProjectGroup === each.title ? "" : "hidden"}`}>
                 <div className="flex flex-col text-center w-full">
                   <h1 className="text-xl font-medium title-font mb-4">{each.title}</h1>
                   <p className="lg:w-2/3 mx-auto leading-relaxed text-base">{each.description}</p>
@@ -51,7 +51,7 @@ function ProjectSectionComponent({ Redux }) {
                 {each?.projects?.map((each1, index1) => (
                   <React.Fragment key={index1}>
                     <div className="p-4 w-full md:w-1/3 text-left">
-                      <div className="h-full bg-[#CED46A] dark:bg-[#07553B] text-[#07553B] dark:text-[#CED46A] rounded-lg overflow-hidden">
+                      <div className="h-full bg-[#E2D3F3] dark:bg-[#013DC4] text-[#013DC4] dark:text-[#E2D3F3] rounded-lg overflow-hidden">
                         <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={each1?.image?.url} alt="blog" />
                         <div className="p-6">
                           <h1 className="title-font text-lg font-medium  mb-1">{each1.title}</h1>
@@ -69,7 +69,7 @@ function ProjectSectionComponent({ Redux }) {
                                 </Link> 
                               ) : 
                               each2?.title === "Visit Admin" ? (
-                                <span key={index2} className="mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm py-1 border-r-2 border-[#07553B] dark:border-[#CED46A]">
+                                <span key={index2} className="mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm py-1 border-r-2 border-[#013DC4] dark:border-[#E2D3F3]">
                                   <Link to={each2?.url} target="_blank" rel="noreferrer" >
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5 mr-3 cursor-pointer" viewBox="0 0 24 24">
                                       <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
